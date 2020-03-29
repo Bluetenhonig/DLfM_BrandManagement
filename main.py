@@ -12,6 +12,8 @@ from sklearn.metrics import accuracy_score
 app = Flask(__name__)
 model = load_model('./playground/demo_model.h5')
 
+
+
 # script works but always returns the same number as prediction...
 # TODO: figure out where the problem is and reconstruct the modelling process more carefully/systematically
 
@@ -54,5 +56,5 @@ def predict(bn):
 
 
 if __name__ == "__main__":
-    app.run(debug=True)
+    app.run(debug=False)
 
